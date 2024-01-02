@@ -1,6 +1,8 @@
 from ascii import AsciiEncrypt
 
 
+# The `LostEncrypt` class is a subclass of `AsciiEncrypt` that encrypts data using ASCII values and
+# allows for customization of the return type.
 class LostEncrypt(AsciiEncrypt):
 
     def __init__(self, data, returnType:str = 'str', asciiTableInterval = [33,126]):
@@ -8,13 +10,5 @@ class LostEncrypt(AsciiEncrypt):
         
         
         self.data = data
-        self.respose = data
         self.returnType = returnType
-    
-    
-    
-    
-enc = LostEncrypt('teste','str')
-print(enc.asciiPlus(1,1))
-print(enc.asciiSubtract(1))
-print(enc.asciiTableInterval)
+        
