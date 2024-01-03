@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Lost-Encryptor
+Version: 0.1b0
+Requires: numpy
+License-File: LICENSE
