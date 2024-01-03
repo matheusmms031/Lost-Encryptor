@@ -15,8 +15,8 @@ class AsciiEncrypt():
     def __init__(self, asciiTableInterval = [33,126]):
         self.asciiTableInterval = asciiTableInterval
     
-    def asciiPlus(self, n: int = 1, incrementFor: int = 0):
-        match self.returnType:
+    def asciiPlus(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'):
+        match returnType:
             case "str":
                 
                 response = ""
@@ -40,12 +40,13 @@ class AsciiEncrypt():
                     else:
                         response.append(ascii - self.asciiTableInterval[1]*maxInterval)
                     n += incrementFor
-                    
+                
         self.data = response
         return response
 
-    def asciiSubtract(self, n: int = 1, incrementFor: int = 0):
-        match self.returnType:
+    
+    def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'): #! Está faltando redefinir quando for menor que 33
+        match returnType:
             case "str":
                 response = ""
                 for letter in self.data:
@@ -60,3 +61,6 @@ class AsciiEncrypt():
                     
         self.data = response
         return response
+    
+    
+    
