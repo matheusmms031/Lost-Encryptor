@@ -27,7 +27,6 @@ class AsciiEncrypt():
                         response += chr(ascii - self.asciiTableInterval[1]*maxInterval + self.asciiTableInterval[0])
                     else:
                         response += chr(ascii - self.asciiTableInterval[1]*maxInterval)
-                    print(ascii,maxInterval)
                     n += incrementFor
                     
             case "ascii":
