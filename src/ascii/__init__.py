@@ -12,10 +12,11 @@ class AsciiEncrypt():
     of `n` in order to achieve different encryption patterns. Defaults to 0
     """
     
-    def __init__(self, asciiTableInterval = [33,126]):
+    def __init__(self, data, asciiTableInterval = [33,126]):
+        self.data = data
         self.asciiTableInterval = asciiTableInterval
     
-    def asciiPlus(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'):
+    def asciiPlus(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str') -> str | list:
         match returnType:
             case "str":
                 
@@ -46,6 +47,7 @@ class AsciiEncrypt():
 
     
     def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'): #! Está faltando redefinir quando for menor que 33
+        
         match returnType:
             case "str":
                 response = ""
