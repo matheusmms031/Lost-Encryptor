@@ -26,8 +26,3 @@ class LostEncrypt(AsciiEncrypt,ToHASHs):
         self.data = str(data)
 
         
-
-teste = LostEncrypt('Teste')
-teste.asciiPlus(0,returnType='str')
-teste.toHASH('md5')
-print(teste.data)

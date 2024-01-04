@@ -1,2 +1,4 @@
 # Lost Encryptor
- A library to encrypt data and prevent intrusions
+O projeto Lost Encryptor é uma biblioteca que te permite criar suas próprias criptografias, podendo ser usado em qualquer ocasião que necessite de proteção de dados.
+
+

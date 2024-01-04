@@ -24,9 +24,3 @@ class BrasilAlgorithm(AsciiEncrypt,ToHASHs):
     def paco(self):
         self.asciiPlus(self.key)
         return self.data
-    
-    # def pacoDescriptografy(self):
-        
-
-teste = BrasilAlgorithm('abcde',500)
-print(teste.paco())
