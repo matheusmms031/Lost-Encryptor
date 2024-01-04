@@ -12,7 +12,7 @@ class AsciiEncrypt():
     of `n` in order to achieve different encryption patterns. Defaults to 0
     """
     
-    def __init__(self, data, asciiTableInterval = [33,126]):
+    def __init__(self, data, asciiTableInterval = [0,256]):
         self.data = data
         self.asciiTableInterval = asciiTableInterval
     
@@ -24,10 +24,7 @@ class AsciiEncrypt():
                 for letter in self.data:
                     ascii = ord(letter) + n
                     maxInterval = ascii // self.asciiTableInterval[1]
-                    if maxInterval != 0:
-                        response += chr(ascii - self.asciiTableInterval[1]*maxInterval + self.asciiTableInterval[0])
-                    else:
-                        response += chr(ascii - self.asciiTableInterval[1]*maxInterval)
+                    response += chr(ascii - self.asciiTableInterval[1]*maxInterval)
                     n += incrementFor
                     
             case "ascii":
@@ -36,23 +33,22 @@ class AsciiEncrypt():
                 for letter in self.data:
                     ascii = ord(letter) + n
                     maxInterval = ascii // self.asciiTableInterval[1]
-                    if maxInterval != 0:
-                        response.append(ascii - self.asciiTableInterval[1]*maxInterval + self.asciiTableInterval[0])
-                    else:
-                        response.append(ascii - self.asciiTableInterval[1]*maxInterval)
+                    response.append(ascii - self.asciiTableInterval[1]*maxInterval)
                     n += incrementFor
                 
         self.data = response
         return response
 
     
-    def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'): #! Está faltando redefinir quando for menor que 33
+    def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'): #! Está faltando redefinir quando for menor que 0
         
         match returnType:
             case "str":
                 response = ""
                 for letter in self.data:
-                    response += chr(ord(letter) - n)
+                    ascii = ord(letter) - n
+                    minInterval = ascii // self.asciiTableInterval[0]
+                    response += chr(ascii - minInterval*self.asciiTableInterval[1])
                     n += incrementFor
             case "ascii":
                 response = []
