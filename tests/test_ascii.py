@@ -7,7 +7,7 @@ from pytest import mark
 
 sys.path.append(str(Path(__file__).parent.parent))
 
-from src import LostEncrypt
+from LostEncryptor import LostEncrypt
 
 
 @mark.asciiPlus

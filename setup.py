@@ -2,8 +2,8 @@ from setuptools import setup
 
 
 setup(
-    name='Lost-Encryptor',
-    packages=['src','src.ascii'],
+    name='LostEncryptor',
+    packages=['LostEncryptor','LostEncryptor.ascii','LostEncryptor.algorithm'],
     version='0.1beta',
     requires=['numpy']
 )
