@@ -10,3 +10,5 @@ O projeto Lost Encryptor é uma biblioteca que te permite criar suas próprias c
 ## Documentação
 A documentação ainda está sendo escrita, porém em quanto não temos essa disponibilidade eu sugiro que leia as *docstrings* do `source-code` até o lançamento da **versão 1.0**, até lá não teremos documentação.
 
+> [!WARNING]
+> A versão atual (0.2.0-beta) **não está pronta para distribuição**, então pode ocorrer erros inesperados durante execução do código.
