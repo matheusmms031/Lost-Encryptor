@@ -45,4 +45,6 @@ class LostEncrypt(AsciiEncrypt,ToHASHs,Codes):
     def toBytes(self,encoding: Literal["ascii", "utf8"]):
         if encoding in self.encodingTypes:
             self.data = self.data.encode(encoding=encoding)
-                
+            return self.data
+        else:
+            raise ValueError(f"{encoding} not is one type of possible")

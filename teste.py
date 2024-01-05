@@ -5,6 +5,4 @@ import requests
 
 
 teste = LostEncrypt('teste')
-
-
-print(teste.EncodeBase64())
+print(teste.toBytes(encoding='ascii'))
