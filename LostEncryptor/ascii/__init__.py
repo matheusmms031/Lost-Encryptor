@@ -1,15 +1,15 @@
 class AsciiEncrypt():
     """
-    The `AsciiEncrypt` class provides methods for encrypting and decrypting ASCII characters using a
-    specified interval.
+    A classe `AsciiEncrypt` fornece métodos para criptografar e descriptografar caracteres ASCII usando um
+    intervalo especificado.
     
-    Args:
-      n (int): The parameter `n` in the `asciiPlus` and `asciiSubtract` methods represents the number of
-    positions to shift the ASCII value of each character. It determines how much the ASCII value will be
-    incremented or decremented. Defaults to 1
-      incrementFor (int): The `incrementFor` parameter is used to specify the amount by which the value
-    of `n` should be incremented after each iteration of the loop. It allows for dynamic incrementation
-    of `n` in order to achieve different encryption patterns. Defaults to 0
+    Argumentos:
+      n (int): O parâmetro `n` nos métodos `asciiPlus` e `asciiSubtract` representa o número de
+    posições para mudar o valor ASCII de cada caractere. Determina quanto será o valor ASCII
+    incrementado ou decrementado. O padrão é 1
+      incrementFor (int): O parâmetro `incrementFor` é usado para especificar a quantidade pela qual o valor
+    de `n` deve ser incrementado após cada iteração do loop. Permite incrementação dinâmica
+    de `n` para obter diferentes padrões de criptografia. O padrão é 0
     """
     
     def __init__(self, data, asciiTableInterval = [0,256]):

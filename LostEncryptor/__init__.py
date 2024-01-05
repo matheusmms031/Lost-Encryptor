@@ -1,7 +1,17 @@
+
+"""
+Lost Encryptor
+~~~~~~~~~~~~~~~~~~~~~
+
+Pacote de criptografia e codificação em cadas.
+
+:license: GPL V.3.0.
+"""
+
+
 import sys
 from pathlib import Path
 import hashlib
-
 
 
 #! ISSO TEM QUE SER REVISTO MAIS TARDE
@@ -19,6 +29,8 @@ else:
 
 
 
+# The `LostEncrypt` class is a subclass of `AsciiEncrypt` and `ToHASHs` that takes a string as input
+# and initializes the `data` attribute.
 class LostEncrypt(AsciiEncrypt,ToHASHs):
 
     def __init__(self, data: str):
