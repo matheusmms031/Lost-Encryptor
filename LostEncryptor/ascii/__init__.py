@@ -40,7 +40,7 @@ class AsciiEncrypt():
         return response
 
     
-    def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'): #! Está faltando redefinir quando for menor que 0
+    def asciiSubtract(self, n: int = 1, incrementFor: int = 0, returnType: str = 'str'):
         
         match returnType:
             case "str":
@@ -48,12 +48,21 @@ class AsciiEncrypt():
                 for letter in self.data:
                     ascii = ord(letter) - n
                     minInterval = ascii // self.asciiTableInterval[0]
-                    response += chr(ascii - minInterval*self.asciiTableInterval[1])
+                    if minInterval != 0:
+                        response += chr(self.asciiTableInterval[1] - (ascii - minInterval*self.asciiTableInterval[1])) # * Deve ser testado
+                    else:
+                        response += chr(ascii)
                     n += incrementFor
+                    
             case "ascii":
                 response = []
                 for letter in self.data:
-                    response.append(ord(letter) - n)
+                    ascii = ord(letter) - n
+                    minInterval = ascii // self.asciiTableInterval[0]
+                    if minInterval != 0:
+                        response.append(self.asciiTableInterval[1] - (ascii - minInterval*self.asciiTableInterval[1])) # * Deve ser testado
+                    else: 
+                        response.append(ascii)
                     n += incrementFor
                     
                     
