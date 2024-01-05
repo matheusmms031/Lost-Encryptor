@@ -6,5 +6,5 @@ import requests
 
 teste = LostEncrypt('teste')
 
-teste.asciiSubtract(237)
-print(teste.data)
+
+print(teste.EncodeBase64())
