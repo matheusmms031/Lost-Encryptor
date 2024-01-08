@@ -1,0 +1,10 @@
+site_name: Lost Encryptor
+theme:
+  name: material
+plugins:
+- autorefs
+- search 
+- mkdocstrings:
+    handlers: 
+      python:
+        path: [LostEncryptor]

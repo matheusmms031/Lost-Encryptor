@@ -51,7 +51,7 @@ class LostEncrypt(AsciiEncrypt,ToHASHs,Codes):
             ValueError: [description]
 
         Returns:
-            [bytes]: O `self.data` codificado para bytes
+            (bytes): O `self.data` codificado para bytes
             
         """
         
