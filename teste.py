@@ -1,8 +1,8 @@
 from LostEncryptor import LostEncrypt
-import requests
+
 
 
 
 
 teste = LostEncrypt('teste')
-print(teste.toBytes(encoding='ascii'))
+print(teste.ascii_subtract(2))
