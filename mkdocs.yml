@@ -1,10 +1,27 @@
 site_name: Lost Encryptor
+nav:
+  - Home: index.md
+  - Guia: guia.md
+  - Básico:
+    - Codificando em Ascii: ascii.md
+
 theme:
   name: material
+
 plugins:
+- info
+- tags
 - autorefs
 - search 
 - mkdocstrings:
     handlers: 
       python:
         path: [LostEncryptor]
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

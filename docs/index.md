@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+---
+icon: material/home
+status: new
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# O projeto
 
-## Commands
+O Lost Encryptor foi criado na tentativa de sanar problemas envolvendo criptografia e codificação em pilhas, imagine que queiramos pegar um texto, retirar ele de UTF-8 e passar para inteiro, somar 2 em cada caracter transformado e encriptar usando SHA1.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Seria uma complicação e tanto, e para isso foi criado o pacote LostEncryptor
