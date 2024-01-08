@@ -1,14 +1,3 @@
-
-"""
-Lost Encryptor
-~~~~~~~~~~~~~~~~~~~~~
-
-Pacote de criptografia e codificação em cadas.
-
-:license: GPL V.3.0.
-"""
-
-
 import sys
 from pathlib import Path
 import hashlib
@@ -33,18 +22,40 @@ else:
 
 
 
-# The `LostEncrypt` class is a subclass of `AsciiEncrypt` and `ToHASHs` that takes a string as input
-# and initializes the `data` attribute.
 class LostEncrypt(AsciiEncrypt,ToHASHs,Codes):
+    """LostEncrypt herda propriedades e funcões de todas as outras classes.
+    """
 
     def __init__(self, data: str) -> None:
+        
+        """Função inicializadora da classe LostEncrypt
+
+        Args:
+            data (str): dados que vão ser criptografados
+        """
+        
         AsciiEncrypt.__init__(self,data)
+        Codes.__init__(self,data)
+        ToHASHs.__init__(self,data)
         self.data = str(data)
         self.encodingTypes = ['ascii','utf8']
-
+        
     def toBytes(self,encoding: Literal["ascii", "utf8"]):
+        
+        """Função que transforma o `self.data` para bytes.
+
+        Args:
+            encoding (Literal["ascii", "utf8"]): Tipos de codificação aceitas
+
+        Raises:
+            ValueError: [description]
+
+        Returns:
+            [bytes]: O `self.data` codificado para bytes
+            
+        """
+        
         if encoding in self.encodingTypes:
             self.data = self.data.encode(encoding=encoding)
             return self.data
-        else:
-            raise ValueError(f"{encoding} not is one type of possible")
+        raise ValueError(f"{encoding} not is one type of possible")
