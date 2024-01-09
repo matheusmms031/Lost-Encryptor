@@ -6,6 +6,3 @@ venv/
 
 #dev
 .vscode/
-
-#site
-site/
