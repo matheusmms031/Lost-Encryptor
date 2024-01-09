@@ -6,9 +6,24 @@ nav:
     - Codificando em Ascii: ascii.md
     - Criptografando em hashs: criptografando.md
     - Codificando em Bases: codes.md
-    
+  
+copyright: Copyright &copy; 2024 - 2024 Matheus Magalhães
+
 theme:
   name: material
+  features:
+    - navigation.footer
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/tetebytee/
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/matheusmms31
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/matheusmagalhaes031/
+    - icon: fontawesome/brands/github
+      link: https://github.com/matheusmms031
 
 plugins:
 - info
