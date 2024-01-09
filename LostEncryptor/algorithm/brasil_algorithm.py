@@ -14,8 +14,8 @@ else:
     from ascii import AsciiEncrypt
 
 
-
 class BrasilAlgorithm(AsciiEncrypt,ToHASHs):
+    
     def __init__(self,data: str, key: int) -> None:
         self.data = data
         AsciiEncrypt.__init__(self,data)

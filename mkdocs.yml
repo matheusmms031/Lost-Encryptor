@@ -4,7 +4,9 @@ nav:
   - Guia: guia.md
   - Básico:
     - Codificando em Ascii: ascii.md
-
+    - Criptografando em hashs: criptografando.md
+    - Codificando em Bases: codes.md
+    
 theme:
   name: material
 

@@ -5,4 +5,5 @@ from LostEncryptor import LostEncrypt
 
 
 teste = LostEncrypt('teste')
-print(teste.ascii_subtract(2))
+teste.toBytes(encoding='utf8')
+print(type(teste.EncodeBase64()))
