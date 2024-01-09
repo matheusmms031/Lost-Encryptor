@@ -10,7 +10,7 @@ O projeto Lost Encryptor é uma biblioteca que te permite criar suas próprias c
 ## Documentação
 A documentação ainda está sendo escrita, porém já se pode ter acesso completo por meio do [link](https://lost-encryptor.netlify.app/)
 
-### Como contribuir?
+## Como contribuir?
 
 Para contribuir para este projeto basta criar um fork deste repositório, realizar suas alterações e fazer um PR e que será analisada no mesmo dia.
 
