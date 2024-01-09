@@ -8,6 +8,7 @@ LostEncryptor.egg-info/dependency_links.txt
 LostEncryptor.egg-info/top_level.txt
 LostEncryptor/algorithm/__init__.py
 LostEncryptor/algorithm/brasil_algorithm.py
+LostEncryptor/algorithm/codes.py
 LostEncryptor/algorithm/tohashs.py
 LostEncryptor/ascii/__init__.py
 tests/test_ascii.py

@@ -26,7 +26,6 @@ extra:
       link: https://github.com/matheusmms031
 
 plugins:
-- info
 - tags
 - autorefs
 - search 
