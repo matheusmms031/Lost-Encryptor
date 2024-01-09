@@ -28,12 +28,12 @@ class AsciiEncrypt():
         Returns:
             (str | list): Pode ser ou em `string` ou `list` dependendo do valor de `return_type`
             
-        Examples:
-            Quero transformar o texto `teste` contido em `self.data` em ascii e somar 2 cada caracter.
-            
+        Example: Quero transformar o texto `teste` contido em `self.data` em ascii e somar 2 cada caracter.
+            ```python
             >>> objeto = LostEncrypt('teste')
             >>> print(asciiPlus(n=2))
             vguvg
+            ```
         """
         
         
@@ -76,12 +76,12 @@ class AsciiEncrypt():
         Returns:
             (str | list): Pode ser ou em `string` ou `list` dependendo do valor de `return_type`
             
-        Examples:
-            Quero transformar o texto `teste` contido em `self.data` em ascii e subtrair 2 cada caracter.
-            
+        Example: Quero transformar o texto `teste` contido em `self.data` em ascii e subtrair 2 cada caracter.
+            ```python
             >>> objeto = LostEncrypt('teste')
             >>> print(ascii_subtract(n=2))
             rcqrc
+            ```
         """
         
         match return_type:
